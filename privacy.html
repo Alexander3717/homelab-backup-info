@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zásady používania a ochrany údajov súkromnej aplikácie Homelab Backup.">
+  <title>Ochrana súkromia · Homelab Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a class="brand" href="index.html">Homelab Backup</a><nav aria-label="Hlavná navigácia"><a href="index.html">O aplikácii</a><a href="privacy.html" aria-current="page">Súkromie</a><a href="terms.html">Podmienky</a></nav></header>
+  <main>
+    <p class="eyebrow">Homelab Backup</p><h1>Zásady ochrany súkromia</h1>
+    <p class="lead">Tieto zásady opisujú osobné zálohovanie vlastných údajov pomocou restic, rclone a Google Drive. Účelom prístupu je vytváranie, kontrola, uchovávanie a obnova záloh.</p>
+    <section><h2>Rozsah prístupu</h2><p>Aplikácia je pripravovaná s oprávnením <code>https://www.googleapis.com/auth/drive.file</code>. Rclone pracuje so súbormi a priečinkami vytvorenými pod touto registráciou. Pre správu záložného úložiska môže tieto súbory vytvárať, čítať, meniť a odstraňovať; obsah ostatných súborov na Disku sa na tento účel nevyžaduje.</p></section>
+    <section><h2>Ukladané údaje a ich ochrana</h2><p>Zdrojom sú súbory a nastavenia vybrané správcom servera. Môžu obsahovať osobné alebo dôverné údaje. Záložné dáta šifruje restic pred ich odoslaním do Google Drive. Google Drive poskytuje úložisko šifrovaných dát.</p><p>Prihlasovanie prebieha u Google. Rclone uchováva oprávnenie na prístup vo forme OAuth tokenov na zariadení správcu. Heslo Google účtu sa do konfigurácie rclone nevkladá. Tokeny, identifikačné tajomstvá a heslo zálohy nepatria na túto webovú stránku.</p></section>
+    <section><h2>Použitie a sprístupnenie údajov</h2><p>Údaje slúžia výlučne na osobné zálohovanie a obnovu. Nepredávajú sa, nepoužívajú sa na reklamu ani na trénovanie modelov umelej inteligencie a neposkytujú sa iným používateľom ako verejná služba.</p><p>Používanie informácií získaných z Google API sa riadi <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> vrátane požiadaviek Limited Use.</p></section>
+    <section><h2>Uchovávanie, vymazanie a odvolanie prístupu</h2><p>Dobu uchovávania záložných snímok určuje správca v nastavení zálohovania. Správca môže údaje odstrániť zo svojho záložného úložiska a odvolať aplikácii prístup v nastaveniach svojho Google účtu. Odvolanie prístupu zastaví ďalšie autorizované operácie rclone; existujúce záložné dáta samo osebe nevymaže.</p></section>
+    <section><h2>Návšteva tejto stránky</h2><p>Stránka neobsahuje prihlasovací formulár, reklamné ani analytické skripty. Pri publikovaní na GitHub Pages môže poskytovateľ hostingu zaznamenávať technické údaje o návšteve vrátane IP adresy na bezpečnostné účely. Podrobnosti uvádza <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">zásada ochrany súkromia GitHub</a>.</p></section>
+    <section><h2>Kontakt a zmeny</h2><p>Na otázky týkajúce sa aplikácie slúži e-mail podpory na obrazovke súhlasu Google. Pri zmene spôsobu práce s údajmi správca tieto zásady aktualizuje.</p></section>
+  </main>
+  <footer><p>Homelab Backup · aktualizované 17. novembra 2026</p><p><a href="index.html">O aplikácii</a> · <a href="terms.html">Podmienky používania</a></p></footer>
+</body>
+</html>

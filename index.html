@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informácie o súkromnom zálohovaní Homelab Backup pomocou restic, rclone a Google Drive.">
+  <title>Homelab Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a class="brand" href="index.html">Homelab Backup</a><nav aria-label="Hlavná navigácia"><a href="index.html" aria-current="page">O aplikácii</a><a href="privacy.html">Súkromie</a><a href="terms.html">Podmienky</a></nav></header>
+  <main>
+    <p class="eyebrow">Súkromný projekt · informačná stránka</p>
+    <h1>Šifrované zálohy<br>domáceho servera.</h1>
+    <p class="lead">Homelab Backup je osobná registrácia aplikácie pre zálohovanie vlastného linuxového servera do Google Drive. Na prenos používa rclone a na vytváranie šifrovaných záloh restic.</p>
+    <section aria-labelledby="purpose"><h2 id="purpose">Na čo aplikácia slúži</h2><p>Účelom je uchovať vybrané súbory a konfigurácie správcu servera tak, aby ich mohol obnoviť pri strate dát alebo zariadenia. Ide o osobný nástroj určený jeho správcovi, nie o verejnú zálohovaciu službu.</p></section>
+    <section aria-labelledby="flow"><h2 id="flow">Ako sa používajú údaje</h2><ol><li>Restic vytvára záložné snímky a šifruje ich na zdrojovom zariadení.</li><li>Rclone zabezpečuje prenos zašifrovaných dát do Google Drive a späť pri obnove.</li><li>Prístup k Disku sa udeľuje cez prihlasovaciu a súhlasovú obrazovku Google.</li></ol><p>Registrácia je pripravovaná s oprávnením <code>drive.file</code> pre súbory a priečinky vytvorené aplikáciou. Podrobnosti opisujú <a href="privacy.html">zásady ochrany súkromia</a>.</p></section>
+    <section aria-labelledby="contact"><h2 id="contact">Kontakt</h2><p>Na otázky týkajúce sa registrácie slúži e-mail podpory uvedený na obrazovke súhlasu Google.</p></section>
+  </main>
+  <footer><p>Homelab Backup · aktualizované 17. novembra 2026</p><p><a href="privacy.html">Zásady ochrany súkromia</a> · <a href="terms.html">Podmienky používania</a></p></footer>
+</body>
+</html>
